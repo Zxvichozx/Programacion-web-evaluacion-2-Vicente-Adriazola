@@ -13,8 +13,9 @@
 
     <div class="container">
         <div class="row">
-            < class="col-12">
-                <form action="" method="post" enctype="multipart/form-data"></form>
+            <h2>Registrar persona</h2>
+            <div class="col-12">
+                <form action="proc.php" method="post" enctype="multipart/form-data"></form>
                     <div class="mb-3">
                         <label for="nombre_completo" class="form-label">Nombre completo</label>
                         <input type="text" class="form-control" id="nombre_completo" name="nombre_completo">
@@ -37,6 +38,7 @@
                     </div>
                     
                     <button type="submit" class="btn btn-primary">Crear</button>
+                </form>
             </div>
         </div>
     </div>
