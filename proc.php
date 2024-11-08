@@ -39,14 +39,14 @@
         $url = "http://localhost/ver_asistente.php?id=$id";
         $filename= "qr/qr_$id.png";
         QRcode::png($url,$filename);
-        $actualizar = "UPDATE asistentes SET qr_path = '$filename' WHERE id = $id";
+        $actualizar = "UPDATE asistentes SET codigo_QR = '$filename' WHERE id = $id";
         mysqli_query($conn, $actualizar);
     }
     
     
-    subir_archivo($archivo);
-    registrar_persona($conn,$nombre_completo,$RUT,$telefono,$imagen,$email);
     
+    registrar_persona($conn,$nombre_completo,$RUT,$telefono,$imagen,$email);
+    subir_archivo($imagen);
     crear_qr($conn);
-    mysqli_close($conexion);
+    mysqli_close($conn);
 ?>

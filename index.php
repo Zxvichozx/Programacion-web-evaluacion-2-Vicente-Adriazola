@@ -15,7 +15,7 @@
         <div class="row">
             <h2>Registrar persona</h2>
             <div class="col-12">
-                <form action="proc.php" method="post" enctype="multipart/form-data"></form>
+                <form action="proc.php" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="nombre_completo" class="form-label">Nombre completo</label>
                         <input type="text" class="form-control" id="nombre_completo" name="nombre_completo">
@@ -37,7 +37,7 @@
                         <input type="file" name="imagen" id="imagen">
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Crear</button>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
                 </form>
             </div>
         </div>
